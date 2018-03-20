@@ -1,0 +1,126 @@
+
+body{
+  text-align: center;
+  line-height: 1.5em;
+  background-color: #eaeaea;
+}
+
+#profile-card {
+  width: 800px;
+  border-radius: 10px;
+  box-shadow:8px 10px 2px -3px grey; 
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: calc(50% - 400px);
+  margin-right: calc(50% - 400px);
+}
+
+#head {
+ background-image: url("Harry-Potter-696x392.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  height: 300px;
+  color: #fff;
+  font-family: "Courier New", "Lucida Console", monospace;
+  font-weight: bold; 
+  position: relative;
+}
+.name-headline {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  margin: 5% 5%;
+  padding: 2.5%;
+  background-color: hsla(202, 42%, 42%, .7);
+  border-radius:12px;
+}
+#about {
+  background-color: #fff;
+  padding: 5%;
+  color: #09526b;
+  padding-bottom: 2%;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+}
+#links
+{
+  font-size: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+}
+
+.fab:hover {
+   background-color: hsl(204, 67%, 67%);
+}
+.fab {
+  background-color: hsl(202, 42%, 42%);
+  color:#fff;
+  border-radius: 50%;
+  height:45px;
+  width:45px;
+  padding:2%;
+  cursor: pointer;
+}
+
+
+@media (max-width:1000px) {
+  #profile-card {
+    margin: 2% 5%;
+    width: 90%;
+    border: 0 none;
+  }
+  
+}
+
+@media (max-width:800px) {
+  body {
+    background-color: #fff;
+  }
+  #profile-card {
+    margin: 0 0;
+    width: 100%;
+    box-shadow:none; 
+    height:100vh;
+  }
+   #head {
+    border-radius: 0px;
+  }
+  .name-headline {
+    font-size:1em;
+    line-height: 1.3em;
+  }
+  #about{
+    border-radius: 0px;
+    padding: 50px 15px;
+    padding-bottom: 0px;
+    height: calc(100vh - 360px);
+  }
+  
+}
+
+@media (max-width:450px) {
+  .name-headline {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 96%;
+  height: 55%;
+  margin: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 0.9em;
+  line-height: 1em;
+  }
+  #about {
+  padding-top: 200px;
+  height: calc(100vh - 505px);
+  }
+  
+}
